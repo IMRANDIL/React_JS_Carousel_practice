@@ -1,10 +1,12 @@
 /* App.css */
 
 .carousel {
-    /* display: flex;
-    justify-content: center; */
+    display: flex; 
+     justify-content: center; 
+     align-items: center;
     width: 100%;
     position: relative;
+   
   }
   
   .carousel img {
@@ -28,7 +30,7 @@
   /* Ensure buttons are below images */
   .prevButton,
   .nextButton {
-    background-color: #333;
+    background-color: #333333bc;
     color: #fff;
     border: none;
     padding: 10px;

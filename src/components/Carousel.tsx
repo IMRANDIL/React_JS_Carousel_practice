@@ -83,15 +83,19 @@ const Carousel = () => {
   };
 
   return (
-    <div className="carousel" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div className="carousel" >
       {loading ? (
         <p style={{ margin: '0 auto' }}>Loading...</p>
       ) : (
         <div style={{
           position:'relative',
           display:'flex',
-          justifyContent:'center'
-        }}>
+          justifyContent:'center',
+          borderRadius: '6px',
+          width: '51%'
+        }}
+        onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+        >
           {images.map((image, index) => (
             <img
               key={index}

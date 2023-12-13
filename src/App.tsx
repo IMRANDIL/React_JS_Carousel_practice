@@ -7,7 +7,9 @@ function App() {
   return (
     <>
       <div style={{
-        textAlign:'center'
+        textAlign:'center',
+        
+        
       }}>
         <h1>The Carousel</h1>
         <Carousel/>
