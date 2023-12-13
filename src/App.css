@@ -1,0 +1,54 @@
+/* App.css */
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    position: relative;
+   
+  }
+  
+  .carousel img {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    border-radius: 6px;
+  }
+
+  .carousel img.visible {
+    display: block;
+  }
+  
+  .carousel img.hidden {
+    display: none;
+  }
+  
+  
+  /* .carousel img.active {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+  }
+  */
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prevButton {
+    left: 10px;
+  }
+  
+  .nextButton {
+    right: 10px;
+  }
+  
+  /* Add any additional styling for buttons as needed */
+   
