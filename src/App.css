@@ -1,8 +1,8 @@
 /* App.css */
 
 .carousel {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     width: 100%;
     position: relative;
   }
@@ -45,3 +45,15 @@
     z-index: 1;
   }
   
+
+
+  /* Media query for small screens */
+@media screen and (max-width: 768px) {
+
+    .carousel img {
+        width: 100%;
+        height: auto;
+        max-width: 100%; 
+        
+    }
+}
