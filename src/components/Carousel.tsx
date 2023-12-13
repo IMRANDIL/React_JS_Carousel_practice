@@ -16,7 +16,7 @@ const Carousel = () => {
         const respData = await fetchData();
         setImages(respData);
         setLoading(false);
-       
+        setAutoPlay(true)
 
       } catch (error) {
         console.error('Error fetching images', error);
@@ -41,7 +41,7 @@ const Carousel = () => {
         if (autoPlay) {
           goToNextSlide();
         }
-      }, 5000);
+      }, 10000);
     };
 
     startAutoPlay();

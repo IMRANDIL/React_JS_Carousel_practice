@@ -6,7 +6,7 @@
     /* align-items: center; */
     width: 100%;
     position: relative;
-   
+    
   }
   
   .carousel img {
@@ -14,32 +14,33 @@
     height: 400px;
     position: absolute;
     border-radius: 6px;
+    border:  1px solid black;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.5s ease-in-out; /* Apply transition */
   }
-
+  
   .carousel img.visible {
-    display: block;
+    opacity: 1; /* Make visible images fully opaque */
   }
   
   .carousel img.hidden {
-    display: none;
+    opacity: 0; /* Hide images by making them fully transparent */
   }
   
-  
-  /* .carousel img.active {
-    transition: opacity 0.5s ease-in-out;
-    opacity: 1;
-  }
-  */
   .prevButton,
   .nextButton {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
     background-color: #333;
     color: #fff;
     border: none;
     padding: 10px;
     cursor: pointer;
+    border-radius: 2px;
   }
   
   .prevButton {
@@ -50,5 +51,3 @@
     right: 10px;
   }
   
-  /* Add any additional styling for buttons as needed */
-   
