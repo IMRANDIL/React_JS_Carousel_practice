@@ -8,6 +8,16 @@
     position: relative;
    
   }
+
+  .imgbuttContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    width: 51%;
+    /* background-color: red; */
+        
+  }
   
   .carousel img {
     width: 600px;
@@ -55,7 +65,15 @@
     .carousel img {
         width: 100%;
         height: auto;
-        max-width: 100%; 
+       
         
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .imgbuttContainer{
+        width: 100%;
     }
 }

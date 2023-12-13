@@ -87,13 +87,7 @@ const Carousel = () => {
       {loading ? (
         <p style={{ margin: '0 auto' }}>Loading...</p>
       ) : (
-        <div style={{
-          position:'relative',
-          display:'flex',
-          justifyContent:'center',
-          borderRadius: '6px',
-          width: '51%'
-        }}
+        <div className='imgbuttContainer' 
         onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
         >
           {images.map((image, index) => (
