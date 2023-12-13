@@ -87,7 +87,11 @@ const Carousel = () => {
       {loading ? (
         <p style={{ margin: '0 auto' }}>Loading...</p>
       ) : (
-        <>
+        <div style={{
+          position:'relative',
+          display:'flex',
+          justifyContent:'center'
+        }}>
           {images.map((image, index) => (
             <img
               key={index}
@@ -96,13 +100,23 @@ const Carousel = () => {
               className={index === currentIndex ? 'visible' : 'hidden'}
             />
           ))}
+          <div style={{
+            display:'flex',
+           justifyContent:'space-between',
+           width: '500px',
+           margin: '10px',
+          
+          }}>
           <button className="prevButton" onClick={handlePrevButtonClick}>
             Prev
           </button>
           <button className="nextButton" onClick={handleNextButtonClick}>
             Next
           </button>
-        </>
+          </div>
+      
+          
+        </div>
       )}
     </div>
   );
